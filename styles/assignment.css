@@ -197,19 +197,28 @@ h2 {
 .opinion-table th, .opinion-table td {
     padding: 16px;
     border-bottom: 1px solid #e0e0e0;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .opinion-table th {
-    background: #e6f7ea;
+    background: rgba(198, 228, 214, 1);
     text-align: left;
+    font-weight: 600;
+    font-size: 20px;
+    color:#0E0E0E ;
 }
 
 .opinion-table select {
+    font-weight: 500;
+    font-size: 16px;
     padding: 8px 12px;
     border-radius: 6px;
     border: 1px solid #ccc;
+    background-color:rgba(9, 161, 92, 0.15) ;
 }
 
+/* news section */
 .news-card {
     display: flex;
     background: #fff;
@@ -218,7 +227,7 @@ h2 {
     margin-bottom: 24px;
     overflow: hidden;
     align-items: center;
-    gap: 24px;
+    gap: 48px 48px;
     padding: 24px;
 }
 
@@ -228,7 +237,7 @@ h2 {
 }
 
 .news-meta {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     gap: 10px;
     font-size: 13px;
@@ -290,17 +299,30 @@ h2 {
 .newsletter-form {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 18px 0;
+    gap: 0px;
+    align-items: center;
+}
+.newsletter-form input[type="email"] {
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+    height: 40px;        
+    font-size: 16px;      
+    padding: 0 12px;     
+    line-height: 40px; 
+
 }
 
-.newsletter-form input[type="email"] {
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    width: 300px;
+.newsletter-form .section-btn {
+    border-radius: 0 4px 4px 0;
+    height: 40px;       
+    font-size: 16px;      
+    padding: 0 20px;      
+    margin-left: 0;     
+    border-left: none;    
+    line-height: 40px; 
+
 }
+
 
 @media (max-width: 900px) {
     .pillars-row, .vision-row, .news-card {
