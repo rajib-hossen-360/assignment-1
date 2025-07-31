@@ -9,9 +9,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 160px;
+    padding-left: 850px;
+    padding-right: 700px;
     background: #fff;
-    /* width: 1600px; */
+    
 }
 
 
@@ -45,7 +46,9 @@ body {
     background-color: #C6E4D6;
     width: 1280px;
     height: 560px;
-    padding: 40px 32px;
+    padding-left: 60px;
+    padding-top: 117px;
+    padding-bottom: 117px;
     max-width: 1280px;
     width: 100%;
     margin: 40px auto;
@@ -53,11 +56,13 @@ body {
     border-radius: 24px;
     box-sizing: border-box;
 }
+
 .section-heading{
     font-weight: 500;
     font-size: 24px;
-    color: #0E0E0E;
+    color: rgba(14, 14, 14, 0.5);
     display: block;
+    margin-top: 117px;
     margin-bottom: 16px;
 }
 .section-description{
@@ -76,17 +81,18 @@ body {
     border: none;
     border-radius: 8px;
     margin-top:24px ;
-    margin-bottom: 12px;
+    margin-bottom: 117px;
 }
 .img-add{
     max-width: 100%;
     height: 400px;
     display: block;
+    padding: 80px 60px;
 }
 
 /* shyared style */
 h2 {
-    font-family:font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 700;
     font-size: 40px;
     margin: 32px 0 20px 0;
@@ -94,6 +100,7 @@ h2 {
     display: inline-block;
 }
 
+/* pilller section styles */
 .pillars-row {
     display: flex;
     justify-content: space-between;
@@ -108,7 +115,6 @@ h2 {
     padding: 24px 24px;
     flex: 1;
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    /* text-align: center; */
 }
 
 .pillar-card img {
@@ -117,6 +123,7 @@ h2 {
     
 }
 
+/* vision section styles */
 .vision-row {
     display: flex;
     gap: 24px;
@@ -144,14 +151,12 @@ h2 {
 }
 
 .learn-btn {
-    
-    
     border: none;
     border-radius: 8px;
     padding: 11px 20px;
     font-weight: 600;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 8px;
     display: inline-block;
     
 }
@@ -162,7 +167,7 @@ h2 {
 .learn-btn.green {
     background: rgba(9, 161, 92, 1);
     color: rgba(255, 255, 255, 1);
-    
+
 }
 .learn-btn.yellow {
     background: rgba(255, 194, 57, 1);
@@ -184,13 +189,14 @@ h2 {
     font-size: 16px;
     font-family: 400;
 }
+
 /* table styles */
 .opinion-table {
     width: 100%;
     border-collapse: collapse;
     background: #fff;
-    border-radius: 16px
-    overflow: hidden;
+    border-radius: 16px;
+    overflow:hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
@@ -216,6 +222,7 @@ h2 {
     border-radius: 6px;
     border: 1px solid #ccc;
     background-color:rgba(9, 161, 92, 0.15) ;
+    
 }
 
 /* news section */
@@ -237,7 +244,6 @@ h2 {
 }
 
 .news-meta {
-    /* display: flex; */
     align-items: center;
     gap: 10px;
     font-size: 13px;
@@ -256,6 +262,7 @@ h2 {
     cursor: pointer;
 }
 
+/* donate section styles */
 .donate-options {
     display: flex;
     justify-content: center;
@@ -288,7 +295,7 @@ h2 {
     margin: 12px 0;
     font-size: 16px;
 }
-
+/* newsletter section styles */
 .newsletter-box {
     background: #d0f0e0;
     border-radius: 16px;
@@ -301,6 +308,7 @@ h2 {
     justify-content: center;
     gap: 0px;
     align-items: center;
+    max-width:100%;
 }
 .newsletter-form input[type="email"] {
     border-radius: 4px 0 0 4px;
@@ -309,7 +317,8 @@ h2 {
     font-size: 16px;      
     padding: 0 12px;     
     line-height: 40px; 
-
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .newsletter-form .section-btn {
@@ -320,16 +329,27 @@ h2 {
     margin-left: 0;     
     border-left: none;    
     line-height: 40px; 
-
+    margin: 0;
+    box-sizing: border-box;
 }
 
+/* footer styles  */
+.social-icons {
+    margin: 10px 0;
+}
 
-@media (max-width: 900px) {
-    .pillars-row, .vision-row, .news-card {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .news-img {
-        width: 100%;
-    }
+.social-icons img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.social-icons img:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 1440px) {
+  .main-container {
+    margin-left: 160px;
+    margin-right: 160px;
+  }
 }
