@@ -4,17 +4,28 @@ body {
     margin: 0;
     padding: 0;
 }
+/* hover effect */
+.btn:hover,
+.section-btn:hover,
+ .learn-btn:hover, 
+.read-btn:hover,
+.donate-btn:hover {
+  background-color: #ff6600 !important;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
 /* navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 850px;
-    padding-right: 700px;
+    padding-left: 430px;
+    padding-right: 270px;
     background: #fff;
     
 }
-
 
 .title-style {
     font-size: 32px;
@@ -37,6 +48,7 @@ body {
     background: #fff;
     margin: 24px 160px;
 }
+
 
 /* banner styles */
 .banner-title{
@@ -100,7 +112,7 @@ h2 {
     display: inline-block;
 }
 
-/* pilller section styles */
+/* piller section styles */
 .pillars-row {
     display: flex;
     justify-content: space-between;
@@ -178,16 +190,43 @@ h2 {
 .quote-box {
     background: rgba(255, 255, 255, 1);
     border-radius: 16px;
-    padding: 48px 32px;
+    padding: 64px 32px 48px 24px; 
     font-size: 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-   
+   position: relative;
+   overflow: hidden;
+}
+.quote-box::before {
+    content: "❝";
+    font-size: 150px;
+    color: #f0f0f0;
+    position: absolute;
+   top: 10px;
+    left: 15px;
+    z-index: 0;            
+    line-height: 1;
+}
+.quote-text {
+  position: relative;
+  z-index: 1;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
+.quote-box b {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  color: #000;
+}
+
+
 .quote-author {
-    color: rgba(14, 14, 14, 0.6);
-    font-size: 16px;
-    font-family: 400;
+  position: relative;
+  z-index: 1;
+  color: rgba(14, 14, 14, 0.6);
+  font-size: 14px;
 }
 
 /* table styles */
@@ -246,9 +285,10 @@ h2 {
 .news-meta {
     align-items: center;
     gap: 10px;
-    font-size: 13px;
+    font-size: 16px;
     color: #888;
-    margin-bottom: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .read-btn {
@@ -294,6 +334,7 @@ h2 {
     border: 1px solid #ccc;
     margin: 12px 0;
     font-size: 16px;
+    text-align: center;
 }
 /* newsletter section styles */
 .newsletter-box {
@@ -309,6 +350,7 @@ h2 {
     gap: 0px;
     align-items: center;
     max-width:100%;
+    margin-bottom: 24px;
 }
 .newsletter-form input[type="email"] {
     border-radius: 4px 0 0 4px;
